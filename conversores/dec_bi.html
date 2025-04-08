@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor BiOcHex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="body_bi">
+
+    <div id="conteiner_geral"><!--conteiner para centralização geral geral-->
+
+        <header><!--Começo do header-->
+
+            <div id="conteiner_header"><!--Conteiner pra centralizar as divs de forma correta-->
+                <div id="conteiner_nome"><!--Conteiner pro nome do site-->
+                    <h1>BiOcHex</h1>
+                </div>
+                <div id="menu"><!--Menu de seleção-->
+                    <ul>
+                        <li class="op_bi"><a href="binario.html">Binário</a></li><!--OP= option-->
+                        <li class="op_oc"><a href="#">Octal</a></li>
+                        <li class="op_hex"><a href="#">Hexadecimal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <!-- // -->
+
+        <main>
+
+            <h2>Converter decimal para binário <a href="bi_dec.html">(inverter)</a></h2>
+            <!--Inputs-->
+            <div id="centralizar_inputs">
+        
+                <div id="conteiner_inputs">
+                    <legend>Decimal</legend>
+                    <input type="text" name="decimal" id="decimal" autocomplete="off">
+
+                    <!--Botã0 para converter e ativar a function-->
+                    <input onclick="converter()" type="submit" value="Converter">
+
+                    <legend>Binário</legend>
+                    <input type="text" name="binario" id="binario" readonly>
+                </div>
+            </div>
+            <!-- // -->
+
+            <h2>Explicação</h2>
+            <div id="explicacao"><!--Div para a explicação-->
+                <p>Para transformar de decimal para binário é o seguinte:</p>
+                <p>1- Você pode dividir o número decimal por 2 e anote o resto (0 ou 1).Continue dividindo o resultado por 2 até chegar em 0.Depois, é só ler os restos de baixo pra cima.</p>
+                <p>2- Descobrir qual potência de 2 é menor ou igual ao número decimal.Subtraia esse valor e marque um 1 nessa posição.Repita com o resto até chegar em 0, marcando 0 onde a potência não entra.Junte os 1s e 0s para formar o número binário.</p>
+            </div>
+
+        </main>
+        <!-- // -->
+
+    </div>
+    <!-- // -->
+
+    <script src="dec_bi.js"></script>
+</body>
+</html>

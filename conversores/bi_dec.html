@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor BiOcHex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body id="body_bi">
+
+    <div id="conteiner_geral"><!--conteiner para centralização geral geral-->
+
+        <header><!--Começo do header-->
+
+            <div id="conteiner_header"><!--Conteiner pra centralizar as divs de forma correta-->
+                <div id="conteiner_nome"><!--Conteiner pro nome do site-->
+                    <h1>BiOcHex</h1>
+                </div>
+                <div id="menu"><!--Menu de seleção-->
+                    <ul>
+                        <li class="op_bi"><a href="binario.html">Binário</a></li><!--OP= option-->
+                        <li class="op_oc"><a href="#">Octal</a></li>
+                        <li class="op_hex"><a href="#">Hexadecimal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <!-- // -->
+
+        <main>
+
+            <h2>Converter binário para decimal <a href="dec_bi.html">(inverter)</a></h2>
+            <!--Inputs-->
+            <div id="centralizar_inputs">
+        
+                <div id="conteiner_inputs">
+                    <legend>Binário</legend>
+                    <input type="text" name="binario" id="binario" autocomplete="off">
+
+                    <!--Botã0 para converter e ativar a function-->
+                    <input onclick="converter()" type="submit" value="Converter">
+
+                    <legend>Decimal</legend>
+                    <input type="text" name="decimal" id="decimal" readonly>
+                </div>
+            </div>
+            <!-- // -->
+
+            <h2>Explicação</h2>
+            <div id="explicacao"><!--Div para a explicação-->
+                <p>Para transformar um número binário em decimal pode fazer o seguinte:</p>
+                <p>1- Cada dígito do número binário representa uma potência de 2, começando da direita para a esquerda, com o expoente 0.</p>
+                <p>2- Só calcule onde há 1, pois os 0s não somam nada ao total.</p>
+                <p>3- Para cada 1, calcule 2^posição e some os resultados.</p>
+            </div>
+
+        </main>
+        <!-- // -->
+
+    </div>
+    <!-- // -->
+
+    <script src="bi_dec.js"></script>
+</body>
+</html>
