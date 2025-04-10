@@ -29,34 +29,31 @@
         </header>
         <!-- // -->
 
-        <main>
-
-            <h2>Converter binário para decimal <a href="dec_bi.html">(inverter)</a></h2>
-            <!--Inputs-->
-            <div id="centralizar_inputs">
-        
-                <div id="conteiner_inputs">
-                    <legend>Binário</legend>
-                    <input type="text" name="binario" id="binario" autocomplete="off">
-
-                    <!--Botã0 para converter e ativar a function-->
-                    <input onclick="converter()" type="submit" value="Converter">
-
-                    <legend>Decimal</legend>
-                    <input type="text" name="decimal" id="decimal" readonly>
+        <div id="conteiner_main">
+            <main>
+                <h2>Converter binário para decimal <a href="dec_bi.html">(inverter)</a></h2>
+                <!--Inputs-->
+                <div id="centralizar_inputs">
+            
+                    <div id="conteiner_inputs">
+                        <legend>Binário</legend>
+                        <input type="text" name="binario" id="binario" autocomplete="off">
+                        <!--Botã0 para converter e ativar a function-->
+                        <input onclick="converter()" type="submit" value="Converter">
+                        <legend>Decimal</legend>
+                        <input type="text" name="decimal" id="decimal" readonly>
+                    </div>
                 </div>
-            </div>
-            <!-- // -->
-
-            <h2>Explicação</h2>
-            <div id="explicacao"><!--Div para a explicação-->
-                <p>Para transformar um número binário em decimal pode fazer o seguinte:</p>
-                <p>1- Cada dígito do número binário representa uma potência de 2, começando da direita para a esquerda, com o expoente 0.</p>
-                <p>2- Só calcule onde há 1, pois os 0s não somam nada ao total.</p>
-                <p>3- Para cada 1, calcule 2^posição e some os resultados.</p>
-            </div>
-
-        </main>
+                <!-- // -->
+                <h2>Explicação</h2>
+                <div id="explicacao"><!--Div para a explicação-->
+                    <p>Para transformar um número binário em decimal pode fazer o seguinte:</p>
+                    <p>1- Cada dígito do número binário representa uma potência de 2, começando da direita para a esquerda, com o expoente 0.</p>
+                    <p>2- Só calcule onde há 1, pois os 0s não somam nada ao total.</p>
+                    <p>3- Para cada 1, calcule 2^posição e some os resultados.</p>
+                </div>
+            </main>
+        </div>
         <!-- // -->
 
     </div>
