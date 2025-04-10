@@ -29,33 +29,30 @@
         </header>
         <!-- // -->
 
-        <main>
-
-            <h2>Converter decimal para binário <a href="bi_dec.html">(inverter)</a></h2>
-            <!--Inputs-->
-            <div id="centralizar_inputs">
-        
-                <div id="conteiner_inputs">
-                    <legend>Decimal</legend>
-                    <input type="text" name="decimal" id="decimal" autocomplete="off">
-
-                    <!--Botã0 para converter e ativar a function-->
-                    <input onclick="converter()" type="submit" value="Converter">
-
-                    <legend>Binário</legend>
-                    <input type="text" name="binario" id="binario" readonly>
+        <div id="conteiner_main">
+            <main>
+                <h2>Converter decimal para binário <a href="bi_dec.html">(inverter)</a></h2>
+                <!--Inputs-->
+                <div id="centralizar_inputs">
+            
+                    <div id="conteiner_inputs">
+                        <legend>Decimal</legend>
+                        <input type="text" name="decimal" id="decimal" autocomplete="off">
+                        <!--Botã0 para converter e ativar a function-->
+                        <input onclick="converter()" type="submit" value="Converter">
+                        <legend>Binário</legend>
+                        <input type="text" name="binario" id="binario" readonly>
+                    </div>
                 </div>
-            </div>
-            <!-- // -->
-
-            <h2>Explicação</h2>
-            <div id="explicacao"><!--Div para a explicação-->
-                <p>Para transformar de decimal para binário é o seguinte:</p>
-                <p>1- Você pode dividir o número decimal por 2 e anote o resto (0 ou 1).Continue dividindo o resultado por 2 até chegar em 0.Depois, é só ler os restos de baixo pra cima.</p>
-                <p>2- Descobrir qual potência de 2 é menor ou igual ao número decimal.Subtraia esse valor e marque um 1 nessa posição.Repita com o resto até chegar em 0, marcando 0 onde a potência não entra.Junte os 1s e 0s para formar o número binário.</p>
-            </div>
-
-        </main>
+                <!-- // -->
+                <h2>Explicação</h2>
+                <div id="explicacao"><!--Div para a explicação-->
+                    <p>Para transformar de decimal para binário é o seguinte:</p>
+                    <p>1- Você pode dividir o número decimal por 2 e anote o resto (0 ou 1).Continue dividindo o resultado por 2 até chegar em 0.Depois, é só ler os restos de baixo pra cima.</p>
+                    <p>2- Descobrir qual potência de 2 é menor ou igual ao número decimal.Subtraia esse valor e marque um 1 nessa posição.Repita com o resto até chegar em 0, marcando 0 onde a potência não entra.Junte os 1s e 0s para formar o número binário.</p>
+                </div>
+            </main>
+        </div>
         <!-- // -->
 
     </div>
