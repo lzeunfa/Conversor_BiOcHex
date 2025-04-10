@@ -45,4 +45,3 @@ function converter(){
 
     return;
 }
-converter();
