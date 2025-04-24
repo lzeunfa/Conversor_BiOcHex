@@ -8,6 +8,7 @@ let posicaoReal = 0;
 
 let numeroDecimal = document.getElementById("decimal");//recebe o input
 
+//funcao para realizar a conversao no onclick
 function converter(){
     binario = binarioInput.value; // atualiza o valor dentro da função
     numeroDecimal.value = "";

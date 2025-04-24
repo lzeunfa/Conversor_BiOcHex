@@ -62,16 +62,16 @@ header{
     padding-right: 15px;
 }
 
-.op_oc a, .op_hex a{
+.op_hex a{
     text-decoration: line-through;
 }
 
-#body_bi .op_bi a{
+#body_bi .op_bi a, #body_oc .op_oc a{
     text-decoration: none;
     color: black;
 }
 
-#body_bi a{
+#body_bi a, #body_oc a{
     color: rgba(0, 0, 0, 0.562);
 
     transition: .3s;

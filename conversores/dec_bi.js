@@ -2,6 +2,7 @@ let numInput = document.getElementById("decimal"); // recebe o input
 
 let numeroBi = document.getElementById("binario");//recebe o input
 
+//funcao para realizar a conversao no onclick
 function converter(){
     let numDecimal = parseInt(numInput.value);
     let numResto = numDecimal; // resto do numero a ser processado
