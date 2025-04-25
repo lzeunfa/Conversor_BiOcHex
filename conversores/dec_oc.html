@@ -31,27 +31,27 @@
 
         <div id="conteiner_main">
             <main>
-                <h2>Converter octal para decimal <br> <a href="dec_oc.html"><abbr title="inverter"><img src="img/inverterimg.png" alt="inverter" width="32px"></abbr></a></h2>
+                <h2>Converter decimal para octal <br> <a href="oc-dec.html"><abbr title="inverter"><img src="img/inverterimg.png" alt="inverter" width="32px"></abbr></a></h2>
                 <!--Inputs-->
                 <div id="centralizar_inputs">
             
                     <div id="conteiner_inputs">
-                        <legend>Octal</legend>
-                        <input type="text" name="octal" id="octal" autocomplete="off">
+                        <legend>Decimal</legend>
+                        <input type="text" name="decimal" id="decimal" autocomplete="off">
                         <!--Botã0 para converter e ativar a function-->
                         <input onclick="converter()" type="submit" value="Converter">
-                        <legend>Decimal</legend>
-                        <input type="text" name="decimal" id="decimal" readonly>
+                        <legend>Octal</legend>
+                        <input type="text" name="octal" id="octal" readonly>
                     </div>
                 </div>
                 <!-- // -->
                 <h2>Explicação</h2>
                 <div id="explicacao"><!--Div para a explicação-->
-                    <p>Para transformar um numero octal em decimal, os passos são os seguintes:</p>
-                    <p>1- Analisa quantas casas tem.</p>
-                    <p>2- Os octais tem base 8 e o expoente aumenta de 0 até a ultima casa da direita pra esquerda.</p>
-                    <p>3- O resultado das potencias você multiplica pelo numero da casa.</p>
-                    <p>4- Após fazer o apsso 3 com todos os numeros do octal você soma tudo e em fim, octal para decimal.</p>
+                    <p>Para transformar um numero decimal em octal, os passos são os seguintes:</p>
+                    <p>1- Dividir o número por 8</p>
+                    <p>2- Separa o resto que vai pra última posição do octal</p>
+                    <p>3- Dividir o resultado arredondado da divisão e dividir por 8 novamente</p>
+                    <p>4- Quando não for mais possível realizar as divisões você junta todos os restos do último pro primeiro e terá seu número octal</p>
                 </div>
             </main>
         </div>
@@ -60,6 +60,6 @@
     </div>
     <!-- // -->
 
-    <script src="oc_dec.js"></script>
+    <script src="dec_oc.js"></script>
 </body>
 </html>
