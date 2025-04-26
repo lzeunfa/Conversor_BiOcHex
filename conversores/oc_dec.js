@@ -1,5 +1,4 @@
 let octalInput = document.getElementById("octal"); // recebe o input
-let octal = octalInput.value; // recebe o valor digitado no input
 
 let casasOc = 0;
 let posicaoAnalisada = 0;
