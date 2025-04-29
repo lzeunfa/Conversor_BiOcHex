@@ -15,8 +15,6 @@ body{
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
-
     background-color: #E7E9ED;
 }
 
@@ -60,10 +58,6 @@ header{
 
 #menu ul li:not(:last-child){
     padding-right: 15px;
-}
-
-.op_hex a{
-    text-decoration: line-through;
 }
 
 #body_bi .op_bi a, #body_oc .op_oc a, #body_hex .op_hex a{

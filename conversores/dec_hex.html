@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body id="body_bi">
+<body id="body_hex">
 
     <div id="conteiner_geral"><!--conteiner para centralização geral geral-->
 
@@ -31,26 +31,28 @@
 
         <div id="conteiner_main">
             <main>
-                <h2>Converter binário para decimal <br> <a href="dec_bi.html"><abbr title="inverter"><img src="img/inverterimg.png" alt="inverter" width="32px"></abbr></a></h2>
+                <h2>Converter decimal para hexadecimal <br> <a href="hex_dec.html"><abbr title="inverter"><img src="img/inverterimg.png" alt="inverter" width="32px"></abbr></a></h2>
                 <!--Inputs-->
                 <div id="centralizar_inputs">
             
                     <div id="conteiner_inputs">
-                        <legend>Binário</legend>
-                        <input type="text" name="binario" id="binario" autocomplete="off">
+                        <legend>Decimal</legend>
+                        <input type="text" name="decimal" id="decimal" autocomplete="off">
                         <!--Botã0 para converter e ativar a function-->
                         <input onclick="converter()" type="submit" value="Converter">
-                        <legend>Decimal</legend>
-                        <input type="text" name="decimal" id="decimal" readonly>
+                        <legend>Hexaecimal</legend>
+                        <input type="text" name="hexadecimal" id="hexadecimal" readonly>
                     </div>
                 </div>
                 <!-- // -->
                 <h2>Explicação</h2>
                 <div id="explicacao"><!--Div para a explicação-->
-                    <p>Para transformar um número binário em decimal pode fazer o seguinte:</p>
-                    <p>1- Cada dígito do número binário representa uma potência de 2, começando da direita para a esquerda, com o expoente 0.</p>
-                    <p>2- Só calcule onde há 1, pois os 0s não somam nada ao total.</p>
-                    <p>3- Para cada 1, calcule 2^posição e some os resultados.</p>
+                    <p>Para transformar um número decimal em hexadecimal, os passos são os seguintes:</p>
+                    <p>1- Dividir o número por 16 e anote o resto.</p>
+                    <p>2- Continue dividindo o quociente por 16 até o resultado ser 0.</p>
+                    <p>3- Dividir o resultado arredondado da divisão por 16 novamente.</p>
+                    <p>4- Os restos formam o número hexadecimal, lidos de baixo para cima..</p>
+                    <p>5- Substitua restos de 10 a 15 por letras de A a F.</p>
                 </div>
             </main>
         </div>
@@ -59,6 +61,6 @@
     </div>
     <!-- // -->
 
-    <script src="bi_dec.js"></script>
+    <script src="dex_hex.js"></script>
 </body>
 </html>
